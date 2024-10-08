@@ -1,9 +1,22 @@
 import React from 'react'
-import NavBar from '../../components/Navigation/NavBar'
+import "./Home.css"
+import Navbar from '../../components/Navigation/Navbar'
+import LeftPane from '../../components/LeftPane/leftPane'
+import PostPane from '../../components/PostPane/postPane'
+import RightPane from '../../components/RightPane/rightPane'
 
 export default function Home() {
   return (
-   <NavBar/>
-
+    
+    <div>
+        <Navbar/>
+        <div className="bottomContainer"> 
+        <LeftPane/>
+        <PostPane/>
+        <RightPane/>
+        </div>
+       
+     
+    </div>
   )
 }
